@@ -1,2 +1,2 @@
-#!/bin/bash/
+#!/bin/bash
 find /mount/point -maxdepth 1 -type d | wc -l
