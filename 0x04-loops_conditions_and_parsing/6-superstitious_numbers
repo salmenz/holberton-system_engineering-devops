@@ -5,13 +5,13 @@ while [ $i -lt 21 ]
 do
     echo $i
     case $i in
-        3)
+        4)
             echo "bad luck from China"
             ;;
-        8)
+        9)
             echo "bad luck from Japan"
             ;;
-        16)
+        17)
             echo "bad luck from Italy"
             ;;
     esac
