@@ -2,6 +2,7 @@
 # Display Holberton School 10 times
 i=0
 until [ $i -eq 9 ]
-	do echo "Holberton School"
-	((++i))
+	do 
+	echo "Holberton School"
+	((i++))
 done
