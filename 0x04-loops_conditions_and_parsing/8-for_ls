@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Displays the content
+for i in *
+do
+    find "$i" | cut -d"-" -f2
+done
