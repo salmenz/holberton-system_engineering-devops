@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 # Display numbers from 1 - 20 and bad luck
-i=1
-while [ $i -le 20 ]
+i=0
+while [ $i -lt 20 ]
 do
     echo $i
     case $i in
-        4)
+        3)
             echo "bad luck from China"
             ;;
-        9)
+        8)
             echo "bad luck from Japan"
             ;;
-        17)
+        16)
             echo "bad luck from Italy"
             ;;
     esac
