@@ -27,7 +27,7 @@ size_t i = 0;
 
 while (i < 5)
 {
-zombie = fork();
+pid = fork();
 if (pid == 0)
 exit(0);
 else
