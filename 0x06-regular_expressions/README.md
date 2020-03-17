@@ -42,4 +42,4 @@ What you should learn from this project:
 ---
 
 ## Author
-* **Salmen Zouari** - [jozsa](https://github.com/jozsa)
+* **Salmen Zouari** - [salmenz](https://github.com/salmenz)
