@@ -26,4 +26,4 @@ File | Task
 18-commas | List all files and directories in current working directory separated by commas
 holberton.mgc | Create a magic file that can be used with the command `file` to find `Holberton` data files which always contain the string `HOLBERTON` at offset 0
 ## Author
--Allison Weiner
+-Salmen Zouari
