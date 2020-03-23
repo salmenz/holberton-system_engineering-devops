@@ -7,3 +7,4 @@ file { '/tmp/holberton':
   mode    => '0744',
   content  => 'I love Puppet',
     }
+
