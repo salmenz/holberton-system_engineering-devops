@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Configure the 404 page
+./3-redirection
+sudo echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
+sudo sed -i '30 i\ \terror_page 404 /404.html;\n' /etc/nginx/sites-enabled/default 
+service nginx restart
