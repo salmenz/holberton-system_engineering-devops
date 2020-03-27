@@ -19,7 +19,7 @@ exec {'html page':
 
 exec {'redirection':
   provider => shell,
-  command  => 'redirect="location /redirect_me {\nrewrite ^/(.*)$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n}\n"\nsudo sed -i "30i $redirect" /etc/nginx/sites-available/default',
+  command  => sudo sed -i "30i location /redirect_me {\nrewrite ^/(.*)$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n} /etc/nginx/sites-available/default',
 }
 
 exec {'start':
