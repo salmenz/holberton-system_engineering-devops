@@ -3,5 +3,5 @@
 sudo add-apt-repository ppa:vbernat/haproxy-1.8
 sudo apt-get update
 sudo apt-get install haproxy
-sudo sed -i "37 i\ listen 1072-lb-01\n\tbind *:80\n\tstats enable\n\tbalance roundrobin\n\tserver 1072-web-01 34.73.110.76:80 check\n\tserver 1072-web-02 34.228.145.214:80 check" /etc/haproxy/haproxy.cfg
+sudo sed -i "36 i\ listen 1072-lb-01\n\tbind *:80\n\tstats enable\n\tbalance roundrobin\n\tserver 1072-web-01 34.73.110.76:80 check\n\tserver 1072-web-02 34.228.145.214:80 check" /etc/haproxy/haproxy.cfg
 service haproxy restart
