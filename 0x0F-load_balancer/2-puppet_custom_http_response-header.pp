@@ -18,7 +18,7 @@ exec {'redirection':
   command  => 'sudo sed -i "36 i\ \tadd_header X-Served-By {$hostname};\n" /etc/nginx/sites-enabled/default',
 }
 
-exec {'start':
+exec {'restart':
   provider => shell,
-  command  => 'service nginx start',
+  command  => 'service nginx restart',
 }
