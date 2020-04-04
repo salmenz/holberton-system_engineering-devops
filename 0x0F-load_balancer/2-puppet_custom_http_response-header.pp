@@ -12,14 +12,10 @@ exec {'install':
   command  => 'sudo apt-get -y install nginx',
 }
 
-exec {'hostname var':
-  provider => shell,
-  command  => 'hostname=$(cat /etc/hostname)',
-}
 
 exec {'redirection':
   provider => shell,
-  command  => 'sudo sed -i "36 i\ \tadd_header X-Served-By $hostname;\n" /etc/nginx/sites-enabled/default',
+  command  => 'sudo sed -i "36 i\ \tadd_header X-Served-By {$hostname};\n" /etc/nginx/sites-enabled/default',
 }
 
 exec {'start':
