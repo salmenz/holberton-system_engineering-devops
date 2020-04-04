@@ -19,7 +19,7 @@ exec {'hostname var':
 
 exec {'redirection':
   provider => shell,
-  command  => 'sudo sed -i "45 i\ \tadd_header X-Served-By $hostname;\n" /etc/nginx/sites-enabled/default',
+  command  => 'sudo sed -i "45 i\ \tadd_header X-Served-By {$hostname};\n" /etc/nginx/sites-enabled/default',
 }
 
 exec {'start':
