@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# run nginx as nginx and listen on port 8080
+chown nginx:nginx /etc/nginx/nginx.conf
+chmod 755 /etc/nginx/nginx.conf
+sed -i 's/80 default_server/8080 default_server/' /etc/nginx/sites-available/default
+pkill -f apache2
+sudo -u nginx service nginx start 
