@@ -15,7 +15,7 @@ exec {'install':
 
 exec {'redirection':
   provider => shell,
-  command  => 'sudo sed -i "36 i\ \tadd_header X-Served-By $(cat /etc/hostname);" /etc/nginx/sites-enabled/default',
+  command  => ''sed -i -e "/sendfile/i \\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf',
 }
 
 exec {'restart':
