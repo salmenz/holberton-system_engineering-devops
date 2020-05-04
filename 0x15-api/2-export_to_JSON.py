@@ -15,7 +15,7 @@ if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/todos?userId="
     todolist = requests.get(url+"{}".format(id)).json()
     tasks = []
-    username = user.get('username')
+    username = emp.get('username')
     for task in todolist:
         data = {}
         data['task'] = task.get('title')
