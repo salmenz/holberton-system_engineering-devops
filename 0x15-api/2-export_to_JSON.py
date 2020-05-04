@@ -21,7 +21,7 @@ if __name__ == "__main__":
         data['task'] = task.get('title')
         data['completed'] = task.get('completed')
         data['username'] = username
-        tasks.append(dtask)
+        tasks.append(data)
 
     json_data = {}
     json_data[id] = tasks
