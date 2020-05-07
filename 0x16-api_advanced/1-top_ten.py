@@ -11,7 +11,8 @@ def top_ten(subreddit):
 
     header = {'User-Agent': 'Mozilla/5.0', 'From': 'salmen.zooro@gmail.com'}
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    req = requests.get(url, headers=header, allow_redirects=False)
+    req = requests.get(url, headers=header, allow_redirects=False,
+                       params={"limit": 10})
     hot = req.json()
     try:
         for i in range(10):
