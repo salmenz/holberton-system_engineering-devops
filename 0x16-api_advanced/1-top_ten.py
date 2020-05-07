@@ -18,4 +18,4 @@ def top_ten(subreddit):
         for i in range(10):
             print(hot["data"]["children"][i]["data"]["title"])
     except:
-        priint("None")
+        print("None")
